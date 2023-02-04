@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham's Gym Website</title>
+</head>
+<!-- link:css  and in href write the path css/style.css-->
+<link rel="stylesheet" href="css/style9.css">
+<!-- used the google font link to structure the website for css fonts and apply font-family for it in body of it also -->
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        /* url is a function through which you can the extract the image url in the bacground */
+        /* inside url write the path of image  */
+        background: url('image/sk.jpg');
+    }
+
+    .left {
+        position: absolute;
+        left: 12px;
+        top: 4px;
+        /* border: 2px solid hotpink; */
+        display: inline-block;
+    }
+
+    .mid {
+        /* 3 condition to bring it in middle 1. display block 2.margin make auto 3.width set as required here we set as 33% */
+        display: block;
+        margin: 29px auto;
+        /* border: 2px solid darkturquoise; */
+        width: 36%;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 29px;
+        display: inline-block;
+        /* border: 2px solid magenta; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+    .left div {
+        text-align: center;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 12px 12px;
+    }
+
+    .navbar li a:hover{
+        background-color: hotpink;
+        text-decoration: underline;
+        color: yellow;
+    }
+    .navbar li a.active {
+        color: yellow;
+        text-decoration: underline;
+        padding: 34px 23px;
+    }
+
+    .left img {
+        width: 176px;
+        /* note there is a function in css called invert which is like filter:invert(100%) if your logo image is black so it makes it white on screen */
+    }
+    .left:hover{
+        text-decoration: underline;
+        color: yellow;
+         }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px;
+        border: 2px solid darkblue;
+        border-color: white;
+        border-radius: 23px;
+        padding: 4px 14px;
+        color: white;
+        font-size: 12px;
+        background-color: black;
+        cursor: pointer;
+    }
+    .active a{
+        padding: 12px;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+    .container{
+        border: 2px solid red;
+        margin: 105px 44px;
+        padding: 36px 112px;
+        width: 20%;
+        border-radius: 28px;
+        border-color: white;
+        font-size: 9px;
+    }
+    .form-group input{
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 333px;
+        padding: 3px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 12px;
+        border-radius: 13px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 111%;
+        /* margin auto will make submit button here in the center */
+        margin: 20px auto;
+        background-color: white;
+        color: black;
+        border-radius: 4px;
+    }
+</style>
+
+<body>
+    <!-- inside one header , i will create my 3 div left, right and center for different purpose -->
+    <header class="header">
+        <!-- We are doing it for the logo of the website. Creating a class left and img src givent to it. -->
+        <div class="left">
+            <img src="image\bg.jpg" alt="">
+            <!-- This div will give the namespace below the logo on the leftside of the website -->
+            <div>Shubham Fitness Center</div>
+        </div>
+        <!-- left box for logo -->
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <!-- class="active" means if my home is there it should look separately and i can make changes specific to home like grey coloretc -->
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Center</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <!-- mid box for navbar -->
+
+        </div>
+        <div class="right">
+            <!-- Created button using button.btn*2 and took two buttons formation this way. -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+            <!-- right box for buttons/search -->
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the Best Gym of Delhi Now</h1>
+        <!-- inside the form , we created a form-group class in div and respectively used placeholder to give the desired columns in the form specified here , the details of the form are designed accordingly here -->
+        <form action="noaction.php">
+            <div class="form-group">
+                <!-- input:text and add placeholder explicity replacing id from this format-->
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <!-- input:text and add placeholder explicity replacing id from this format-->
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <!-- input:text and add placeholder explicity replacing id from this format -->
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <!--input:text and add placeholder explicity replacing id from this format -->
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <!--input:text and add placeholder explicity replacing id from this format -->
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <!--input:text and add placeholder explicity replacing id from this format -->
+                <input type="text" name="" placeholder="Enter your EmailId">
+            </div>
+            <!-- button.btn -->
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
